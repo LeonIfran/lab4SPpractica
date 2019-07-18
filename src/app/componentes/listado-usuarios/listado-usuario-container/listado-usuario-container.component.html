@@ -1,0 +1,9 @@
+<div class="d-flex justify-content-around extra-bottom">
+  <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" class="btn btn-secondary" (click)="mostrar('todo')">Todos</button>
+      <button type="button" class="btn btn-secondary" (click)="mostrar('alumno')">Alumnos</button>
+      <button type="button" class="btn btn-secondary" (click)="mostrar('profesor')">Profesores</button>
+      <button type="button" class="btn btn-secondary" (click)="mostrar('admin')">Administradores</button>
+  </div>
+</div>
+<app-listado-usuario-lazy [usuarios]="this.usuarios"></app-listado-usuario-lazy>
